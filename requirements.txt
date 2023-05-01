@@ -1,0 +1,4 @@
+asgiref              3.6.0 ASGI specs, helper code, and adapters
+django               4.2   A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+django-debug-toolbar 4.0.0 A configurable set of panels that display various debug information about the current request/response.
+sqlparse             0.4.4 A non-validating SQL parser.

@@ -7,6 +7,7 @@ authors = ["Le Duc Duy <duy.leduc8@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 Django = "^4.2"
+django-debug-toolbar = "^4.0.0"
 
 [tool.poetry.dev-dependencies]
 

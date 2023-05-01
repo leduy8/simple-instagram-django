@@ -27,6 +27,18 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-debug-toolbar"
+version = "4.0.0"
+description = "A configurable set of panels that display various debug information about the current request/response."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+django = ">=3.2.4"
+sqlparse = ">=0.2"
+
+[[package]]
 name = "sqlparse"
 version = "0.4.4"
 description = "A non-validating SQL parser."
@@ -50,10 +62,11 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "008ac51a03f5178a7a9526fbc6c38a66241b09e49ca6bdf3fc87f19df0672ee3"
+content-hash = "26e7872259927a6e79d03235a357b6c30c22c3ab3e74b2b3461bf46a84c9b509"
 
 [metadata.files]
 asgiref = []
 django = []
+django-debug-toolbar = []
 sqlparse = []
 tzdata = []
