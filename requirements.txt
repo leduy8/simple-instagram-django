@@ -1,4 +1,9 @@
-asgiref              3.6.0 ASGI specs, helper code, and adapters
-django               4.2   A high-level Python web framework that encourages rapid development and clean, pragmatic design.
-django-debug-toolbar 4.0.0 A configurable set of panels that display various debug information about the current request/response.
-sqlparse             0.4.4 A non-validating SQL parser.
+asgiref              3.6.0  ASGI specs, helper code, and adapters
+django               4.2    A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+django-debug-toolbar 4.0.0  A configurable set of panels that display various debug information about the current request/response.
+django-environ       0.10.0 A package that allows you to utilize 12factor inspired environment variables to configure your Django application.
+psycopg2-binary      2.9.6  psycopg2 - Python-PostgreSQL Database Adapter
+sqlparse             0.4.4  A non-validating SQL parser.
+
+django~=4.2
+django-debug-toolbar~=4.0.0
