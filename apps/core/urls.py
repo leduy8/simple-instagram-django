@@ -1,5 +1,5 @@
 from django.urls import path
 
-from . import views
+from apps.core.views.user_views import manage_user_list
 
-urlpatterns = [path("", views.say_hello)]
+urlpatterns = [path("users/", manage_user_list)]

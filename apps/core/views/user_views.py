@@ -2,5 +2,5 @@ from django.http import HttpResponse  # noqa
 from django.shortcuts import render
 
 
-def say_hello(request):
+def manage_user_list(request):
     return render(request, "hello.html")
