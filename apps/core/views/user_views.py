@@ -1,6 +1,7 @@
-from django.http import HttpResponse  # noqa
-from django.shortcuts import render
+from apps.core.common.decorators import api_route
 
 
+@api_route(methods=["GET"])
 def manage_user_list(request):
-    return render(request, "hello.html")
+    data = {"ok?": "ok!", "really?": "yes!"}
+    return data, 200
