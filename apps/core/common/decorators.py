@@ -12,18 +12,19 @@ def api_route(content_type="application/json", methods=None):
                 return HttpResponseNotAllowed(methods)
 
             response = func(request, *args, **kwargs)
+            json_response = {}
+            status = 200
 
             if isinstance(response, HttpResponseNotAllowed):
                 return response
 
             if isinstance(response, (tuple, list)):
-                response, status = response
-            else:
-                response = {}
-                status = 200
+                json_response, status = response
+            elif isinstance(response, dict):
+                json_response = response
 
             return HttpResponse(
-                json.dumps(response), status=status, content_type=content_type
+                json.dumps(json_response), status=status, content_type=content_type
             )
 
         return wrapper
